@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+section {
+    scroll-margin-top: 80px; /* Compensa a altura da navbar */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 15px 0;
+}
+.navbar {
+    width: 100%; /* Preenche a largura total da página */
+    height: 80px; /* Define a altura da navbar */
+    background-color: #000080; /* Cor de fundo */
+    display: flex;
+    justify-content: space-between; /* Espaça os itens dentro da navbar */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 20px 0px; /* Espaço interno à esquerda e à direita */
+    position: fixed; /* Mantém a navbar fixa no topo, mesmo ao rolar a página */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Garante que a navbar fique sobre os outros elementos */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove os bullets dos links de navegação */
+    display: flex; /* Organiza os itens em linha */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px; /* Adiciona espaçamento entre os itens */
+  }
+  
+  .navbar ul li a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho do texto dos links */
+  }
+  
+  .navbar ul li a:hover {
+    color: #000000; /* Cor ao passar o mouse */
+  }
+  
+  
+.hero {
+    background-image: url('../assets/hero-background.png');
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 50px;
+}
+
+.cta-button {
+    background-color: #1d86c2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.link {
+    color: #ff6600;
+}
+
+/* Programs */
+.programs {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
