@@ -1,0 +1,155 @@
+/* doacoes.css */
+
+.donations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+  
+  .donations-container h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 50px;
+  }
+  
+  .donations-container section {
+    margin-bottom: 50px;
+  }
+  
+  .donations-container h2 {
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .donations-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #002050;
+  }
+  
+  /* Removemos .donation-options e .donation-button */
+  
+  /* Formulário de Doação */
+  .donation-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .donation-form h3 {
+    color: #004080;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .donation-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donation-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .donation-form input,
+  .donation-form select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .donation-form input:focus,
+  .donation-form select:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+  }
+  
+  .donation-form button {
+    background-color: #008000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donation-form button:hover {
+    background-color: #006400;
+  }
+  
+  /* Estilos para o Tipo de Doação */
+  .donation-type {
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .donation-type legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #004080;
+  }
+  
+  .donation-type-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .donation-type-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .donation-type-option label {
+    font-size: 16px;
+  }
+  
+  /* Reconhecimento */
+  .recognition {
+    text-align: center;
+  }
+  
+  .recognition h2 {
+    margin-bottom: 30px;
+  }
+  
+  .impact-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .story p {
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+  .story strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #004080;
+  }
+  
+  /* Responsividade */
+  @media screen and (min-width: 768px) {
+    .impact-stories .story {
+      width: 60%;
+    }
+  }
+  
