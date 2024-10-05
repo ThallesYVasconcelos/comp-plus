@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Programs from './components/home/programs';
@@ -9,7 +9,6 @@ import Resources from './components/resources/resources';
 import Partnerships from './components/partnership/partnership';
 import Donations from './components/donations/donations'; 
 import Contact from './components/contact/contact';
-import Footer from './components/footer';
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
         <Route path="/donations" element={<Donations />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

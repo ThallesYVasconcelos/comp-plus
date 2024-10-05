@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from '../navbar.jsx'; // Corrigido o caminho
+import Navbar from '../navbar/navbar.jsx';
 import Hero from './hero.jsx';
 import About from './about.jsx';
 import Programs from './programs.jsx';
 import Events from './events.jsx';
 import Testimonials from './testimonials.jsx';
-import Footer from '../footer.jsx'; // Certifique-se que o caminho do footer está correto também
-import '../styles.css';
+import Footer from './footer.jsx';
+import './styles.css';
+import '../navbar/style-navbar.css'
 
 function Home() {
   return (

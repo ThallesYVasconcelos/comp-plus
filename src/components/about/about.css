@@ -14,6 +14,7 @@
   .about-page p {
     line-height: 1.6;
     margin-bottom: 15px;
+    color: rgb(0, 0, 0);
   }
   
   .team-governance .team-members {
