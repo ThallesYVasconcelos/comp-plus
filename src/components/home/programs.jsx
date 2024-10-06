@@ -1,48 +1,44 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 import InovacaoImage from '../../assets/programa-inovação.jpg';
 import WorkshopImage from '../../assets/Workshop.png';
 import IniciacaoImage from '../../assets/Iniciacao.png';
+import HackathonImage from '../../assets/hackathon.jpg';
 
 const Programs = () => {
-  const settings = {
-    dots: true,          
-    infinite: true,       
-    speed: 500,           
-    slidesToShow: 1,     
-    slidesToScroll: 1,    
-    autoplay: true,       
-    autoplaySpeed: 3000,  
-  };
- 
   return (
-    <section className="program-highlights">
-      <h2>Destaques dos Programas</h2>
-      <Slider {...settings}>
-        <div className="card">
+    <section className="program-summary">
+      <h2>Nossos Programas</h2>
+      <div className="program-grid">
+        <div className="program-card">
           <img src={InovacaoImage} alt="Programa de Inovação" />
-          <h3>Programa de Inovação</h3>
-          <p>Desenvolva soluções criativas para os maiores desafios da sociedade.</p>
-          <a href="/programa-inovacao">Saiba Mais</a>
+          <div className="program-info">
+            <h3>Inovação</h3>
+            <p>Solucione desafios com tecnologia.</p>
+            <a href="/programa-inovacao" className="program-link">Saiba Mais</a>
+          </div>
         </div>
-        <div className="card">
+
+        <div className="program-card">
           <img src={WorkshopImage} alt="Workshops Tecnológicos" />
-          <h3>Workshops Tecnológicos</h3>
-          <p>Participe de workshops práticos sobre tecnologia emergente.</p>
-          <a href="/workshops">Saiba Mais</a>
+          <div className="program-info">
+            <h3>Workshops</h3>
+            <p>Aprenda sobre novas tecnologias.</p>
+            <a href="/workshops" className="program-link">Saiba Mais</a>
+          </div>
         </div>
-        <div className="card">
+
+        <div className="program-card">
           <img src={IniciacaoImage} alt="Iniciação Científica" />
-          <h3>Iniciação Científica</h3>
-          <p>Fomente o conhecimento acadêmico com projetos de pesquisa.</p>
-          <a href="/iniciacao-cientifica">Saiba Mais</a>
+          <div className="program-info">
+            <h3>Iniciação Científica</h3>
+            <p>Projetos acadêmicos em destaque.</p>
+            <a href="/iniciacao-cientifica" className="program-link">Saiba Mais</a>
+          </div>
         </div>
-      </Slider>
+      </div>
     </section>
   );
+
 }
 
 export default Programs;

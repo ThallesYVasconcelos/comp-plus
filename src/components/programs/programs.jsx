@@ -1,16 +1,20 @@
 import React from 'react';
+import Navbar from '../navbar/navbar.jsx';
+import ProgramsHighlights from './programs-highlights.jsx';
+import ProgramsList from './programs-lists.jsx';
+import Scholarships from './programs-pages/Scholarships';
+import Training from './programs-pages/Training';
+import Hackathons from './programs-pages/Hackathons';
+import DigitalInclusion from './programs-pages/DigitalInclusion';
+import './styles-programs.css';
+import '../navbar/style-navbar.css';
 
-const Programs = () => {
+function Programs() {
   return (
     <div>
-      <h1>Programas e Projetos</h1>
-      <p>Aqui você encontrará uma lista de todos os programas e projetos que a organização oferece.</p>
-      <ul>
-        <li>Programa 1: Descrição do programa 1.</li>
-        <li>Programa 2: Descrição do programa 2.</li>
-        <li>Programa 3: Descrição do programa 3.</li>
-        {/* Adicione mais programas conforme necessário */}
-      </ul>
+      <Navbar />
+      <ProgramsHighlights />
+      <ProgramsList/>
     </div>
   );
 }
