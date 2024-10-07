@@ -312,7 +312,7 @@ h2, h3 {
 }
 
 .testimonial-card:hover {
-  transform: translateY(-10px);  /* Animação ao passar o mouse */
+  transform: translateY(-10px); 
 }
 
 .testimonial-card i {

@@ -4,7 +4,7 @@ import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Programs from './components/programs/programs';
-import Events from './components/home/events';
+import Events from './components/events/events';
 import Resources from './components/resources/resources';
 import Partnerships from './components/partnership/partnership';
 import Donations from './components/donations/donations'; 
