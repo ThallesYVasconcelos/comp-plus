@@ -1,0 +1,108 @@
+.resources-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+  
+  .resources-container h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 50px;
+  }
+  
+  .resources-container section {
+    margin-bottom: 50px;
+  }
+  
+  .resources-container h2 {
+    color: #004080;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .resource-items,
+  .tool-items,
+  .publication-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 40px; 
+  }
+  
+  .resource-item,
+  .tool-item,
+  .publication-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center; 
+  }
+  
+  .resource-item img,
+  .tool-item img,
+  .publication-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .resource-item h3,
+  .tool-item h3,
+  .publication-item h3 {
+    margin-top: 0;
+    color: #004080;
+    font-size: 20px;
+  }
+  
+  .resource-item p,
+  .tool-item p,
+  .publication-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .resource-item a,
+  .tool-item a,
+  .publication-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #008000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #008000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .resource-item a:hover,
+  .tool-item a:hover,
+  .publication-item a:hover {
+    background-color: #008000;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  @media screen and (max-width: 992px) {
+    .resource-item,
+    .tool-item,
+    .publication-item {
+      width: 45%; 
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .resource-item,
+    .tool-item,
+    .publication-item {
+      width: 100%; 
+    }
+  }
+  

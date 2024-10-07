@@ -1,5 +1,3 @@
-// Doacoes.jsx
-
 import React from 'react';
 import './doacoes.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +10,6 @@ const Doacoes = () => {
         Doações <FontAwesomeIcon icon={faDonate} />
       </h1>
 
-      {/* Por que Doar */}
       <section className="why-donate">
         <h2>Por que doar?</h2>
         <p>
@@ -23,11 +20,9 @@ const Doacoes = () => {
         </p>
       </section>
 
-      {/* Formas de Doar */}
       <section className="how-to-donate">
         <h2>Formas de Doar:</h2>
 
-        {/* Formulário de Doação */}
         <div className="donation-form">
           <h3>Faça sua Doação</h3>
           <form>
@@ -66,7 +61,6 @@ const Doacoes = () => {
               <option value="pix">PIX</option>
             </select>
 
-            {/* Formas de Doação */}
             <fieldset className="donation-type">
               <legend>Tipo de Doação</legend>
               <div className="donation-type-option">
@@ -99,20 +93,17 @@ const Doacoes = () => {
               </div>
             </fieldset>
 
-            {/* Informações adicionais conforme o método de pagamento selecionado podem ser adicionadas aqui */}
 
             <button type="submit">Contribuir</button>
           </form>
         </div>
       </section>
 
-      {/* Reconhecimento */}
       <section className="recognition">
         <h2>Nosso Agradecimento <FontAwesomeIcon icon={faHandHoldingHeart} /></h2>
         <p>
           Agradecemos profundamente a todos os nossos doadores pelo apoio contínuo. Suas contribuições fazem a diferença e nos permitem continuar nossa missão.
         </p>
-        {/* Histórias de Impacto */}
         <div className="impact-stories">
           <h3>Histórias de Impacto</h3>
           <div className="story">
@@ -125,7 +116,6 @@ const Doacoes = () => {
               "As bolsas de estudo proporcionadas pela fundação foram essenciais para minha formação em Ciência da Computação." - <strong>Carlos Braga</strong>
             </p>
           </div>
-            {/* Adicione mais histórias conforme necessário */}
           </div>
         </section>
       </div>
